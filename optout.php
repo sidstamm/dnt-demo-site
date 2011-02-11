@@ -23,7 +23,7 @@ setcookie($cfg['cookiename'], 'optout', time()+2592000);
 <head>
 <title>Do-Not-Track Example Application</title>
 <link rel="stylesheet" href="styles.css" />
-<meta http-equiv="REFRESH" content="7; URL=http://dnt.sidstamm.com/"></meta>
+<meta http-equiv="REFRESH" content="7; URL=http://<?=$_SERVER['SERVER_NAME']?>/"></meta>
 </head>
 <body>
 <h1>Do-Not-Track Example Application OPT OUT</h1>

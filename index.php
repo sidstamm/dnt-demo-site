@@ -25,9 +25,9 @@ if (!$dnt and $dntval != 1 and !isset($cky)) {
 <div class="innercontent roundedcorners">
 <div class="sidebar">
 
-<a href="http://dnt.sidstamm.com">
+<a href="http://<?=$_SERVER['SERVER_NAME']?>">
 <img style="border:1px solid blue;"
-     src="http://dnt.sidstamm.com/track.php"
+     src="http://<?=$_SERVER['SERVER_NAME']?>/track.php"
      alt="Do-Not-Track demo"
      title="This image may be tracking you.  Click for more info and to opt out."/>
 </a>
@@ -40,9 +40,9 @@ if (!$dnt and $dntval != 1 and !isset($cky)) {
 <p>To participate in the example, embed a graphic on your own web page and watch as your visitors get tracked!  Copy and paste this code into your page:</p>
 
 <textarea id="samplecode" rows=7 cols=35>
-<a href="http://dnt.sidstamm.com">
+<a href="http://<?=$_SERVER['SERVER_NAME']?>">
 <img style="border:1px solid blue;"
-     src="http://dnt.sidstamm.com/track.php"
+     src="http://<?=$_SERVER['SERVER_NAME']?>/track.php"
      alt="Do-Not-Track demo"
      title="This image may be tracking you.  Click for more info and to opt out."/>
 </a>
@@ -70,7 +70,7 @@ If you want to see this site in action, you need to turn it off and then visit s
 
 <? } elseif($cky == "optout") { ?>
 
-<p>You've chosen to opt-out of our tracking using the opt-out cookie method.  If you'd like to play with the demonstration, please clear the cookies set for "dnt.sidstamm.com" and then visit some of the <a href="siteslist.php">sites</a> that have our tracking image on them.
+<p>You've chosen to opt-out of our tracking using the opt-out cookie method.  If you'd like to play with the demonstration, please clear the cookies set for "<?=$_SERVER['SERVER_NAME']?>" and then visit some of the <a href="siteslist.php">sites</a> that have our tracking image on them.
 
 <? } else { ?>
 
@@ -81,7 +81,7 @@ If you want to see this site in action, you need to turn it off and then visit s
 <? } ?>
 
 <h3>PRIVACY NOTICE</h3>
-<p>This web site, <tt>dnt.sidstamm.com</tt> tracks you across other web sites as you browse.  The sites we know about are only the sites that have chosen to participate in the study.  We do not know who you are, only a small sample of sites you have been to.  This data is not shared with anyone and is for illustrative purposes only.  The data collected is only retained for seven days.</p>
+<p>This web site, <tt><?=$_SERVER['SERVER_NAME']?></tt> tracks you across other web sites as you browse.  The sites we know about are only the sites that have chosen to participate in the study.  We do not know who you are, only a small sample of sites you have been to.  This data is not shared with anyone and is for illustrative purposes only.  The data collected is only retained for seven days.</p>
 
 </div>
 
