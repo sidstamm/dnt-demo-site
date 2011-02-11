@@ -1,4 +1,6 @@
 <?php
+require_once('./config/config.php');
+
 // do-not-track PoC.
 
 $dnt = isset($_SERVER['HTTP_DNT']);
