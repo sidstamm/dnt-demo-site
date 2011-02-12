@@ -23,6 +23,7 @@ setcookie($cfg['cookiename'], 'optout', time()+2592000);
 <head>
 <title>Do-Not-Track Example Application</title>
 <link rel="stylesheet" href="styles.css" />
+<link href="http://mozcom-cdn.mozilla.net/includes/min/min.css?g=css" rel="stylesheet">
 <meta http-equiv="REFRESH" content="7; URL=http://<?=$_SERVER['SERVER_NAME']?>/"></meta>
 </head>
 <body>

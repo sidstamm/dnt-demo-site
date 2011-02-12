@@ -1,59 +1,54 @@
-body {
-font-family: sans-serif;
+/* DNT demo page */
+
+#main-feature {
+  min-height: 200px;
+  background: url(http://mozcom-cdn.mozilla.net/img/covehead/divider-main.jpg) 50% 100% no-repeat;
 }
 
-body.main {
-background:#444; 
-color:#ccf;
+#sidebar {
+  float: right;
+  display: inline;
+  margin-right: 25px;
+  width: 255px;
+  padding-left: 10px;
+  margin-top: 20px;
 }
 
-.main h1 {
-  font-size: 44px;
-  font-style: italic;
-  font-weight: bold;
-  margin-bottom:10px;
-
+#sidebar h3 {
+  margin: 0;
 }
 
-div.innercontent {
-background:#fff;
-color:#000;
-padding:5px;
-border:1px solid black;
+#sidebar .sidebar-box {
+  margin: 25px 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #CCE2F3;
+  padding: 20px 20px 15px;
+}
+#sidebar .sidebar-box h3 {
+  line-height: 0.8;
 }
 
-div.sidebar {
-background-color:#ccc;
-border: 1px solid #aaa;
-padding:5px;
-margin:5px;
-text-align:center;
-float:right;
-display:block;
-width:250px;
-}
-
-.sidebar textarea {
-  font-size:10px;
-}
-.sidebar p {
-  text-align: left;
-  font-size:smaller;
-}
-.sidebar h1 {
-  font-size:Large;
+#sidebar .sidebar-box p {
+  font-size: 13px;
+  margin: 5px 0;
 }
 
 
-.roundedcorners {
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
--khtml-border-radius: 10px;
-border-radius: 10px;
+#sidebar textarea {
+  font-size:8px;
+  padding:0;
+  width:100%;
 }
 
-.main iframe#resultslist {
-  width:500px;
-  height:200px;
-  padding:5px;
+#sidebar li {
+  padding: 2px 2px 2px 2px;
+  margin-bottom:5px;
+  display:block;
+}
+
+
+div iframe#resultslist {
+  width:100%;
 }
