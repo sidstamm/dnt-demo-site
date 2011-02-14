@@ -43,7 +43,7 @@ if (!$dnt and $dntval != 1 and !isset($cky)) {
      </div>
   </div>
 <!-- start breadcrumbs #breadcrumbs -->
-<p id="breadcrumbs"><a href="http://www.mozilla.com/" class="home">Home</a> <b>&#187;</b> 
+<p id="breadcrumbs"><a href="http://www.mozilla.com/" class="home">Home</a> <b>&#187;</b>
 <span>DNT Example</span>
 
 </p>
@@ -52,20 +52,20 @@ if (!$dnt and $dntval != 1 and !isset($cky)) {
 
 <div id='sidebar'>
 <div style="text-align:center;margin-bottom:50px;">
-<a href="http://<?=$_SERVER['SERVER_NAME']?>">
+<a href="/">
 <img style="border:1px solid blue;"
-     src="http://<?=$_SERVER['SERVER_NAME']?>/track.php"
+     src="/track.php"
      alt="Do-Not-Track demo"
      title="This image may be tracking you.  Click for more info and to opt out."/>
 </a>
 </div>
 
-<div class='sidebar-box'> 
+<div class='sidebar-box'>
 <h3>Why we made this <span>Example</span></h3>
 <p>We don't usually track people!  This demo is put together to show how a simple tracking application can be created and how it can <em>very easily</em> honor the new DNT header.</p>
 </div>
 
-<div class='sidebar-box'> 
+<div class='sidebar-box'>
 <h3>How to <span>Opt Out</span></h3>
 <p>This site will stop tracking you if you do either of the following:
 <ul>
@@ -74,14 +74,14 @@ if (!$dnt and $dntval != 1 and !isset($cky)) {
 </ul>
 </div>
 
-<div class='sidebar-box'> 
+<div class='sidebar-box'>
 <h3>How to<span>Get Involved</span></h3>
 <p>If you'd like your site to be part of this demo, put this code on your own web page to tell us when people visit your site:</p>
 
 <textarea id="samplecode" rows=8 readonly>
-<a href="http://<?=$_SERVER['SERVER_NAME']?>">
+<a href="http://<?php echo $_SERVER['SERVER_NAME']?>">
 <img style="border:1px solid blue;"
-     src="http://<?=$_SERVER['SERVER_NAME']?>/track.php"
+     src="http://<?php echo $_SERVER['SERVER_NAME']?>/track.php"
      alt="Do-Not-Track demo"
      title="This image may be tracking you.  Click for more info and to opt out."/>
 </a>
@@ -105,7 +105,7 @@ if (!$dnt and $dntval != 1 and !isset($cky)) {
 <p>If you are being tracked, this page will show you the sites we've seen you visit in the past. While we don't know <em>who</em> you are, we've given your browser a random number (using cookies) and you send us that number when you load the image.</p>
 
 <h3>Where Have You Been? </h3>
- 
+
 <? if($dnt and $dntval == 1) { ?>
 
 <p>You've enabled the do-not-track ("DNT") header in your browser, so we aren't tracking you!
@@ -118,7 +118,7 @@ If you want to see this site in action, you need to turn it off and then visit s
 
 <? } elseif($cky == "optout") { ?>
 
-<p>You browser has opt-out cookies!  This means we're not tracking you.  If you'd like to play with the demonstration, please clear the cookies set for this site ("<?=$_SERVER['SERVER_NAME']?>") and then visit some of the sites that have our tracking image on them.
+<p>You browser has opt-out cookies!  This means we're not tracking you.  If you'd like to play with the demonstration, please clear the cookies set for this site ("<?php echo $_SERVER['SERVER_NAME']?>") and then visit some of the sites that have our tracking image on them.
 
 <? } else { ?>
 
@@ -135,7 +135,7 @@ If you want to see this site in action, you need to turn it off and then visit s
 <? } ?>
 
 <h3>Privacy Notice</h3>
-<p>This web site, <tt><?=$_SERVER['SERVER_NAME']?></tt> tracks you across other web sites as you browse.  The sites we know about are only the sites that have chosen to participate in the study.  We do not know who you are, only a small sample of sites you have been to.  We promise not to share information about your browsing habits with anyone else without your permission.  In fact, we really don't want the data, so we'll delete any tracking data after seven days.</p>
+<p>This web site, <tt><?php echo $_SERVER['SERVER_NAME']?></tt> tracks you across other web sites as you browse.  The sites we know about are only the sites that have chosen to participate in the study.  We do not know who you are, only a small sample of sites you have been to.  We promise not to share information about your browsing habits with anyone else without your permission.  In fact, we really don't want the data, so we'll delete any tracking data after seven days.</p>
 
 </div><!-- end main-content -->
 

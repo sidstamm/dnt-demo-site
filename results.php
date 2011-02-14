@@ -18,7 +18,7 @@ $cky = $_COOKIE[$cfg['cookiename']];
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<?
+<?php
 
 if(!$dnt && isset($cky)) {
   $dbh = new PDO($cfg['dbconnectstring'], $cfg['dbuser'], $cfg['dbpassword']);
@@ -30,17 +30,17 @@ if(!$dnt && isset($cky)) {
   foreach ($stmt->fetchAll() as $row) {
     ?>
       <tr>
-       <td><?=$row['time']?></td>
-       <td><a href="<?=$row['referrer']?>"><?=$row['referrer']?></a></td>
+       <td><?php echo $row['time']?></td>
+       <td><a href="<?php echo $row['referrer']?>"><?php echo $row['referrer']?></a></td>
       </tr>
-    <?
+    <?php
   }
 
   // clean up older-than-a-week records
   $stmt = $dbh->prepare("DELETE FROM `tracked_sessions` WHERE to_days(now()) - to_days(`time`) > 7");
   $stmt->execute();
   $dbh = null;
-} 
+}
 ?>
 </body>
 </html>

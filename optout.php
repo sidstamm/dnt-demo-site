@@ -3,7 +3,7 @@
 require_once('./config/config.php');
 
 // opt-out script
-// If user has a cookie set, it deletes any relevant data from the database and 
+// If user has a cookie set, it deletes any relevant data from the database and
 // then sets an opt-out cookie.
 
 $cky = $_COOKIE[$cfg['cookiename']];
@@ -24,7 +24,7 @@ setcookie($cfg['cookiename'], 'optout', time()+2592000);
 <title>Do-Not-Track Example Application</title>
 <link rel="stylesheet" href="styles.css" />
 <link href="http://mozcom-cdn.mozilla.net/includes/min/min.css?g=css" rel="stylesheet">
-<meta http-equiv="REFRESH" content="7; URL=http://<?=$_SERVER['SERVER_NAME']?>/"></meta>
+<meta http-equiv="REFRESH" content="7; URL=/"></meta>
 </head>
 <body>
 <h1>Do-Not-Track Example Application OPT OUT</h1>
