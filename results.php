@@ -2,6 +2,9 @@
 
 require_once('./config/config.php');
 
+header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
+
 // tracking results script
 // Grabs the HTTP request (i.e., cookies and DNT header and referrer) then
 // serves a list of places where the user has been tracked by the tracking
