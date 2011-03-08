@@ -5,19 +5,12 @@ require_once('./config/config.php');
 
 $dnt = isset($_SERVER['HTTP_DNT']);
 $dntval = $_SERVER['HTTP_DNT'];
-$cky = $_COOKIE['trackingcookie'];
 
-// if user hasn't opted out and doesn't have a cookie, set one.
-if (!$dnt and $dntval != 1 and !isset($cky)) {
-  $value = base64_encode(rand(1000000000,9999999999));
-  setcookie('trackingcookie', $value, time()+3600000);
-  $cky = $value;
-}
 ?>
 
 <html>
 <head>
-<title>Mozilla: Do-Not-Track Example Application</title>
+<title>Mozilla: Do-Not-Track Status Indicator</title>
 <link rel="stylesheet" href="styles.css">
 <link href="http://mozcom-cdn.mozilla.net/includes/min/min.css?g=css" rel="stylesheet">
 
@@ -54,36 +47,27 @@ if (!$dnt and $dntval != 1 and !isset($cky)) {
 <div style="text-align:center;margin-bottom:50px;">
 <a href="/">
 <img style="border:1px solid blue;"
-     src="/track.php"
-     alt="Do-Not-Track demo"
-     title="This image may be tracking you.  Click for more info and to opt out."/>
+     src="/dnt_status.php"
+     alt="Do-Not-Track Indicator"
+     title="Mozilla's Do-Not-Track Indicator.  Click for more info on web tracking."/>
 </a>
 </div>
 
 <div class='sidebar-box'>
 <h3>Why we made this <span>Example</span></h3>
-<p>We don't usually track people!  This demo is put together to show how a simple tracking application can be created and how it can <em>very easily</em> honor the new DNT header.</p>
-</div>
-
-<div class='sidebar-box'>
-<h3>How to <span>Opt Out</span></h3>
-<p>This site will stop tracking you if you do either of the following:
-<ul>
-<li><a href="http://blog.sidstamm.com/2011/01/try-out-do-not-track-http-header.html">Enable the DNT header in Firefox</a>.
-<li><a href="./optout.php">Set an opt-out cookie</a>.
-</ul>
+<p>This indicator and information site has been put together to show how it can <em>very easy</em> to detect and honor the new DNT header.</p>
 </div>
 
 <div class='sidebar-box'>
 <h3>How to<span>Get Involved</span></h3>
-<p>If you'd like your site to be part of this demo, put this code on your own web page to tell us when people visit your site:</p>
+<p>If you'd like your site to be part of this demo, put this code on your own web page to show your visitors if they've enabled it</p>
 
 <textarea id="samplecode" rows=8 readonly>
 <a href="http://<?php echo $_SERVER['SERVER_NAME']?>">
 <img style="border:1px solid blue;"
-     src="http://<?php echo $_SERVER['SERVER_NAME']?>/track.php"
-     alt="Do-Not-Track demo"
-     title="This image may be tracking you.  Click for more info and to opt out."/>
+     src="http://<?php echo $_SERVER['SERVER_NAME']?>/dnt_status.php"
+     alt="Do-Not-Track Indicator"
+     title="Mozilla's Do-Not-Track Indicator.  Click for more info on web tracking."/>
 </a>
 </textarea>
 </div>
@@ -91,51 +75,35 @@ if (!$dnt and $dntval != 1 and !isset($cky)) {
 </div><!-- end sidebar -->
 
 <div id="main-feature">
-<h2><span>Do Not Track</span> Example Application</h2>
+<h2><span>Do Not Track</span> Information Page</h2>
 </div>
 
 <div id="main-content">
 <p>Many companies track where you go as you browse from site to site.  Often this is done by placing ads on a wide variety of sites: if my advertisement is on a thousand sites, then I can figure out which of those thousand sites you've been to.</p>
 
-<p>Lots of people don't like this.  In Firefox 4, we've added a feature called the "DNT Header" that lets you tell these "trackers" that you don't like it.  We created this demonstration since we don't do this type of tracking at Mozilla.</p>
+<p>Lots of people don't like this.  In Firefox 4, we've added a feature called the "DNT Header" that lets you tell these "trackers" that you don't like it.  We created this site to show you how easy it is for sites to honor a DNT header, and how to enable it.</p>
 
-<h3>What's This Demo Doing?</span></h3>
-<p>This application shows how you can be tracked around the web.  You'll see images like the one on the top right of this site on a variety of other sites across the web too.  Every time you see them, your browser loads them from our server.  In the process, we're told what pages were showing them to you.  This is how various web services track where you visit on the web and then do things like customize the content they show you.</p>
+<h3>How to Opt Out</h3>
+<p>If you'd like to ask sites to stop tracking you, you can send the DNT header:</p>
+<dl>
+<dt><b>In Firefox 4:</b></dt>
+<dd><a href="http://blog.sidstamm.com/2011/01/try-out-do-not-track-http-header.html">Enable DNT</a>.</dd>
+<dt><b>In Earlier versions of Firefox:</b></dt>
+<dd> Install a DNT-enabling add-on (like <a href="https://addons.mozilla.org/en-US/firefox/addon/universal-behavioral-advertisi/">UBAO</a>).</dd>
+</dl>
+</ul>
 
-<p>If you are being tracked, this page will show you the sites we've seen you visit in the past. While we don't know <em>who</em> you are, we've given your browser a random number (using cookies) and you send us that number when you load the image.</p>
-
-<h3>Where Have You Been? </h3>
-
-<? if($dnt and $dntval == 1) { ?>
-
-<p>You've enabled the do-not-track ("DNT") header in your browser, so we aren't tracking you!
-If you want to see this site in action, you need to let us track you buy turning the feature off and then visit some of the sites that have our tracking image on them.</p>
-
-<? } elseif(!isset($cky)) { ?>
-
-<p>You've not enabled the "DNT" header in your browser, but you've disabled the cookie feature we use to track people.  This is a more effective anti-tracking technique than employing the do-not-track header, but it can make it difficult to use the web in other ways.
-If you want to see this site in action, you need to turn it off and then visit some of the sites that have our tracking image on them.
-
-<? } elseif($cky == "optout") { ?>
-
-<p>You browser has opt-out cookies!  This means we're not tracking you.  If you'd like to play with the demonstration, please clear the cookies set for this site ("<?php echo $_SERVER['SERVER_NAME']?>") and then visit some of the sites that have our tracking image on them.
-
-<? } else { ?>
-
-<p>Because you haven't enabled the do-not-track ("DNT") header in your browser, and we were able to set a cookie in your browser, we know a little bit about your browsing history.</p>
-
-<p>If you'd like us to stop tracking you, simply turn on the "Do Not Track" feature in Firefox 4, or <a href="optout.php">click here</a> to opt out by setting an "opt out" cookie.</p>
-
-<p>Here's a list of sites that we think you've visited, and when we saw you there:</p>
-
-<div style="margin:0;padding:0;width:70%">
-<iframe id="resultslist" src="./results.php"></iframe>
+<div class="sidebar-menu">
+<h3>What does it mean?</h3>
+For more information, check out Alex and Sid's blog entries on this new feature:
+<ul style="list-style-position: inside; margin-left:2em">
+<li><a href="http://firstpersoncookie.wordpress.com/2011/01/31/dnt-1-tell-sites-i-do-not-want-to-be-tracked/">DNT: 1 = "Tell sites I do not want to be tracked</a>
+<li><a href="http://firstpersoncookie.wordpress.com/2011/01/23/more-choice-and-control-over-online-tracking/">More Choice and Control Over Online Tracking</a>
+<li><a href="http://blog.sidstamm.com/2011/01/try-out-do-not-track-http-header.html">Try out the "Do Not Track" HTTP Header</a>
+<li><a href="http://blog.sidstamm.com/2011/01/opting-out-of-behavioral-ads.html">Technical details</a>
+</ul>
 </div>
 
-<? } ?>
-
-<h3>Privacy Notice</h3>
-<p>This web site, <tt><?php echo $_SERVER['SERVER_NAME']?></tt> tracks you across other web sites as you browse.  The sites we know about are only the sites that have chosen to participate in the study.  We do not know who you are, only a small sample of sites you have been to.  We promise not to share information about your browsing habits with anyone else without your permission.  In fact, we really don't want the data, so we'll delete any tracking data after seven days.</p>
 
 </div><!-- end main-content -->
 
