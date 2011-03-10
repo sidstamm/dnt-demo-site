@@ -56,26 +56,6 @@ $dntval = $_SERVER['HTTP_DNT'];
      title="Mozilla's Do-Not-Track Indicator.  Click for more info on web tracking."/>
 </a>
 </div>
-
-<div class='sidebar-box'>
-<h3>Why we made this <span>Example</span></h3>
-<p>This indicator and information site has been put together to show how it can <em>very easy</em> to detect and honor the new DNT header.</p>
-</div>
-
-<div class='sidebar-box'>
-<h3>How to<span>Get Involved</span></h3>
-<p>If you'd like your site to be part of this demo, put this code on your own web page to show your visitors if they've enabled it</p>
-
-<textarea id="samplecode" rows=8 readonly>
-<a href="http://<?php echo $_SERVER['SERVER_NAME']?>">
-<img style="border:1px solid blue;"
-     src="http://<?php echo $_SERVER['SERVER_NAME']?>/dnt_status.php"
-     alt="Do-Not-Track Indicator"
-     title="Mozilla's Do-Not-Track Indicator.  Click for more info on web tracking."/>
-</a>
-</textarea>
-</div>
-
 </div><!-- end sidebar -->
 
 <div id="main-feature">
