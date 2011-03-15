@@ -8,6 +8,11 @@ require_once('./config/config.php');
 
 $dnt = isset($_SERVER['HTTP_DNT']) and $_SERVER['HTTP_DNT'] == 1;
 
+// Force no-caching
+header("Expires: Thu, 19 Nov 1981 08:52:00 GMT");
+header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
+header("Pragma: no-cache");
+
 // serve the appropriate image.
 header("Content-Type: image/png");
 if($dnt) {
