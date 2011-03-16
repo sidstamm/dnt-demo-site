@@ -64,7 +64,7 @@ $dntval = $_SERVER['HTTP_DNT'];
   <? if ($dnt && $dntval == "1") { ?>
   <p>You're using Internet Explorer 9, and your browser is sending the DNT header because you've enabled Tracking Protection!  This means you're using one or more Tracking Protection Lists, and as a result, Internet Explorer is asking all sites to stop tracking you.</p>
   <? } else { ?>
-  <p>To send the Do-not-track header in Internet Explorer 9, you need to enable tracking protection.  The easiest way to do this is to install an empty tracking protection list. <a href="javascript:window.external.msAddTrackingProtectionList('dnt-enabler.tpl', 'Enables the Do-Not-Track header');  window.location.reload()">Click Here</a> to install an empty list and enable the DNT header.</p>
+  <p>To turn on Do-not-track, you need to enable IE 9's Tracking Protection feature. The easiest way to do that is to install Mozilla's simple Tracking Protection List. <a href="javascript:window.external.msAddTrackingProtectionList('dnt-enabler.tpl', 'Mozilla\'s DNT Helper for IE');  window.location.reload()">Click Here to install</a> and enable the DNT header.</p>
   <? } ?>
 </div>
 <? } ?>
