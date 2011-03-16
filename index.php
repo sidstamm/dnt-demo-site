@@ -57,7 +57,7 @@ $dntval = $_SERVER['HTTP_DNT'];
 </a>
 </div>
 
-<? if (true || strchr($_SERVER['HTTP_USER_AGENT'], "MSIE 9.0")) { ?>
+<? if (strchr($_SERVER['HTTP_USER_AGENT'], "MSIE 9.0")) { ?>
 
 <div class="sidebar-box">
 <h3>Other<span>browsers</span></h3>
