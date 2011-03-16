@@ -48,7 +48,7 @@ $dntval = $_SERVER['HTTP_DNT'];
 
 
 <div id='sidebar'>
-<div style="text-align:center;margin-bottom:50px;">
+<div style="text-align:center;margin-bottom:170px;margin-top:60px;">
 <a href="/">
 <img style="border:1px solid blue;"
      src="/dnt_status.php"
@@ -58,16 +58,21 @@ $dntval = $_SERVER['HTTP_DNT'];
 </div>
 
 <? if (strchr($_SERVER['HTTP_USER_AGENT'], "MSIE 9.0")) { ?>
-
 <div class="sidebar-box">
-<h3>Other<span>browsers</span></h3>
+<h3>DNT in Your<span>browser</span></h3>
   <? if ($dnt && $dntval == "1") { ?>
   <p>You're using Internet Explorer 9, and your browser is sending the DNT header because you've enabled Tracking Protection!  This means you're using one or more Tracking Protection Lists, and as a result, Internet Explorer is asking all sites to stop tracking you.</p>
   <? } else { ?>
-  <p>To turn on Do-not-track, you need to enable IE 9's Tracking Protection feature. The easiest way to do that is to install Mozilla's simple Tracking Protection List. <a href="javascript:window.external.msAddTrackingProtectionList('dnt-enabler.tpl', 'Mozilla\'s DNT Helper for IE');  window.location.reload()">Click Here to install</a> and enable the DNT header.</p>
+  <p>To turn on Do-not-track, you need to enable IE 9's Tracking Protection feature. The easiest way to do that is to install Mozilla's Simple Tracking Protection List. <a href="javascript:window.external.msAddTrackingProtectionList('dnt-enabler.tpl', 'Mozilla\'s DNT Helper for IE');  window.location.reload()">Click Here to install</a> and enable the DNT header.</p>
   <? } ?>
 </div>
+<? } else { ?>
+<div class="sidebar-box">
+<h3>Enable this header in <span>Internet Explorer</span></h3>
+  <p>To turn on Do-not-track in IE 9, you need to enable IE 9's Tracking Protection feature. The easiest way to do that is to install <a href="./dnt-enabler.tpl">Mozilla's Simple Tracking Protection List</a>. If you view this page in IE 9, there will be instructions right here.</p>
+</div>
 <? } ?>
+
 </div><!-- end sidebar -->
 
 <div id="main-feature">
