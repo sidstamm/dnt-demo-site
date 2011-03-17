@@ -152,7 +152,7 @@ Click for Instructions
 		</div>
 		
 		  <div class="expander expander-odd"> 
-	<h4 class="expander-header">How Do I Enable the Do-not-track feature?</h4>
+	<h4 class="expander-header">How Do I Enable the Do-not-track Feature?</h4>
 	<div class="expander-content">
 		  <p>This feature is turned off by default. You can find the Do-not-track 
             request on the Advanced pane. <span id="platform-note">On Windows, 
@@ -164,6 +164,21 @@ Click for Instructions
           be tracked&quot;. For more information, see the help file on 
 		  <a href="https://support.mozilla.com/en-US/kb/how-do-i-stop-websites-tracking-me">how to stop web sites from tracking you</a>.</p>  
 		  </div>
+	</div>
+
+		  <div class="expander expander-odd"> 
+	<h4 class="expander-header">Will Companies Honor My Do-not-track Preference?</h4>
+	<div class="expander-content">
+	The short answer is yes, but not yet. Thirty advertising companies 
+	<a href="http://online.wsj.com/article/SB10001424052748704662604576202971768984598.html">committed</a>
+	to implement Do-not-track, including Exponential Interactive Inc., Burst Media Corp., 
+	Audience Science Inc., Casale Media Inc. and Specific Media LLC. However, because Do-not-track
+	is so new, they will need time to change their software and their business practices. If you enable
+	Do-not-track, right now your experience on the Internet will be unchanged. You will send you preference
+	not to be tracked, but companies are not ready to do more than record how many people prefer privacy 
+	to personalization. Over time, companies will implement changes and your preference not to be tracked
+	will be honored. 
+		</div>
 	</div>
 
         <div class="expander expander-odd"> 
