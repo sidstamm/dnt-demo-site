@@ -105,7 +105,7 @@ Click for Instructions
 	   </div>
 
       <div class="expander expander-odd">
-	    <h4 class="expander-header">What is the Do-not-track feature?</h4>
+	    <h4 class="expander-header">What Is the Do-not-track Feature?</h4>
 		<div class="expander-content"> 
           <p>Asking web sites not to track you expresses a preference to web site owners. As of Spring, 2011, this is a brand new feature. Initially, Do-not-track allows you to be counted as having a preference for privacy, but it does not create changes in your web browsing experience until companies support it. You can follow our RSS feed (coming soon!) to learn which sites have announced they will honor Do-not-track soon, and to see which sites already have Do-not-track support now. </p>
 
@@ -114,7 +114,7 @@ Click for Instructions
 	   </div>
 	   
 	         <div class="expander expander-odd">
-	    <h4 class="expander-header">What isn't the Do-not-track feature?</h4>
+	    <h4 class="expander-header">What Isn't the Do-not-track Feature?</h4>
 		<div class="expander-content"> 
           <p>Do-not-track is not an ad blocker. You will still see as many ads with Do-not-track enabled as without. The difference is the type of ads you see. For example, behavioral ads are targeted to your interests based on the web sites you visit and the search terms you use. If you request that web sites do not track you, you will see more generic ads in place of behavioral ads.</p>
           <p>Do-not-track does not enforce your privacy preferences. Sites can ignore your request not to be tracked. Do-not-track will not protect you from bad actors or malicious sites. Do-not-track is not a security mechanism. </p>
@@ -122,8 +122,7 @@ Click for Instructions
 	   </div>
 	   
 	   <div class="expander expander-odd">
-          <h4 class="expander-header">Why Might I Want to Use the Do-not-track 
-            Preference?</h4>
+          <h4 class="expander-header">Why Might I Want to Use Do-not-track?</h4>
           
         <div class="expander-content"> 
           <p>Do-not-track is useful for people who would like more Internet privacy.  Do-not-track was initially envisioned to allow people to choose not to have their data collected and used for behavioral advertising, but it can apply to many situations. Different web sites could handle requests not to track you differently. Sites may interact with you first and get your permission to use or collect data, which gives sites an opportunity to explain their data practices. Do-not-track does not block access to sites, and does not block content from loading.  Consequently, asking sites not to track you should not break the web sites you visit. </p>
@@ -135,8 +134,7 @@ Click for Instructions
           </div>
 	   
 	  <div class="expander expander-odd"> 
-        <h4 class="expander-header">Why Might I Not Want to Use the Do-not-track 
-          Preference?</h4>
+        <h4 class="expander-header">Why Might I Not Want to Use Do-not-track?</h4>
         <div class="expander-content"> 
           <p>If you prefer ads tailored to your interests, and do not want to see ads that are irrelevant to you, then enabling Do-not-track might not be the right choice for you. You might prefer to leave Do-not-track off if you would like a profile of your Internet use to show you more interesting ads.</p>
           <p>Do-not-track may block personalized services you enjoy. For example, a Do-not-track request might mean you would have to type in your zip code each time you want to view a weather report, rather than seeing the weather automatically displayed. Personalization can save you time and repetitive typing, but it requires data.</p>
@@ -145,7 +143,7 @@ Click for Instructions
 		</div>
 		
           <div class="expander expander-odd"> 
-		  <h4 class="expander-header">What, Exactly, is Tracking?</h4>
+		  <h4 class="expander-header">What, Exactly, Is Tracking?</h4>
         <div class="expander-content"> 
           <p>As of Spring, 2011, this is still an evolving area. Different definitions are emerging from different groups, ranging from government, to non-profits, to first-party sites, to advertising platforms. Two different standards bodies, the W3C and the IETF, are both working on definitions, too.  Most definitions define tracking in relation to limiting data collection and / or data use. </p>
         </div>
