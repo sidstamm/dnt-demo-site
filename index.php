@@ -11,12 +11,7 @@ $dntval = $_SERVER['HTTP_DNT'];
 <html>
 <head>
 <title>Mozilla: Do-Not-Track</title>
-<link rel="stylesheet" href="styles.css">
-<link href="http://mozcom-cdn.mozilla.net/includes/min/min.css?g=css" rel="stylesheet">
-    <script src="http://mozcom-cdn.mozilla.net/includes/min/min.js?g=js"></script>
-    <link rel="stylesheet" href="http://mozcom-cdn.mozilla.net/style/covehead/phishing-page.css" media="screen" />
-    <link rel="stylesheet" href="http://mozcom-cdn.mozilla.net/style/covehead/mozilla-expanders.css" media="screen" />
-<!-- %% Replace phishing-page.css before going live! -->
+ 	<meta name="og:image" content="http://www-fx4-cdn.stage.mozilla.com/img/firefox-100.jpg">
 
 <style>
     /* MetaWebPro font family licensed from fontshop.com. WOFF-FTW! */
@@ -27,6 +22,13 @@ $dntval = $_SERVER['HTTP_DNT'];
         font-weight: bold;
     }
 </style>
+	<link href="http://www-fx4-cdn.stage.mozilla.com/includes/min/min.css?g=css" rel="stylesheet">
+    <script src="http://www-fx4-cdn.stage.mozilla.com/includes/min/min.js?g=js"></script>
+    <meta name="WT.ad" content="Do Not Track;Do-not-track;DNT;Privacy;Advertising;Tracking" />
+    <link rel="stylesheet" href="http://www-fx4-cdn.stage.mozilla.com/style/covehead/home-fx.css" media="screen" />
+    <link rel="stylesheet" href="styles.css" media="screen" />
+    <script src="http://www-fx4-cdn.stage.mozilla.com/js/jquery/jquery-css-transform.js"></script>
+    <script src="http://www-fx4-cdn.stage.mozilla.com/js/jquery/jquery-animate-css-rotate-scale.js"></script>
 
 </head>
 <body class="">
@@ -48,16 +50,29 @@ $dntval = $_SERVER['HTTP_DNT'];
 
 
 <div id='sidebar'>
-<div style="text-align:center;margin-bottom:170px;margin-top:60px;">
-<a href="/">
+<div style="text-align:center;margin-bottom:70px;margin-top:60px;">
 <img style="border:1px solid blue;"
      src="/dnt_status.php"
      alt="Do-Not-Track Indicator"
-     title="Mozilla's Do-Not-Track Indicator.  Click for more info on web tracking."/>
+     title="Mozilla's Do-Not-Track Indicator."/>
+</div>
+
+<div class='sidebar-box' style="margin-bottom:50px;">
+<h3>Enable this header in<span/>Firefox 4</span></h3>
+<p style="text-align:center;">
+<a href="https://support.mozilla.com/en-US/kb/how-do-i-stop-websites-tracking-me">
+<img alt="Options window - Advanced panel - Do not track" 
+	 class="frameless" 
+	 src="images/dnt-config-screenshot-thumb.jpg" 
+	 title="Turning on Do-not-track">
+<br/>
+Click for Instructions
 </a>
+</p>
 </div>
 
 <? if (strchr($_SERVER['HTTP_USER_AGENT'], "MSIE 9.0")) { ?>
+
 <div class="sidebar-box">
 <h3>DNT in Your<span>browser</span></h3>
   <? if ($dnt && $dntval == "1") { ?>
@@ -85,47 +100,47 @@ $dntval = $_SERVER['HTTP_DNT'];
       <h3>Frequently asked <span>Questions</span></h3>
       <div class="expander expander-odd"> 
         <div class="expander-content"> 
-          <p>Different people have different privacy preferences. The Do Not Track feature helps you express yourself to web sites.</p>
+          <p>Different people have different privacy preferences. The Do-not-track feature helps you express yourself to web sites.</p>
 		</div>
 	   </div>
 
       <div class="expander expander-odd">
-	    <h4 class="expander-header">What is the Do Not Track feature?</h4>
+	    <h4 class="expander-header">What is the Do-not-track feature?</h4>
 		<div class="expander-content"> 
-          <p>Asking web sites not to track you expresses a preference to web site owners. As of Spring, 2011, this is a brand new feature. Initially, Do Not Track allows you to be counted as having a preference for privacy, but it does not create changes in your web browsing experience until companies support it. You can follow our RSS feed to learn which sites have announced they will honor Do Not Track soon, and to see which sites already have Do Not Track support now. </p>
+          <p>Asking web sites not to track you expresses a preference to web site owners. As of Spring, 2011, this is a brand new feature. Initially, Do-not-track allows you to be counted as having a preference for privacy, but it does not create changes in your web browsing experience until companies support it. You can follow our RSS feed (coming soon!) to learn which sites have announced they will honor Do-not-track soon, and to see which sites already have Do-not-track support now. </p>
 
-          <p>Other Firefox privacy options focus on managing data that can be stored on your computer. Do Not Track focuses on data stored on computers you do not have access to. For example, when you visit a web site you have to send an IP address so it can communicate back to you.  IP addresses can give clues to your general geographic location. You cannot visit a web site without sending an IP address, but you can request that web sites not track you over time in their databases.</p>
+          <p>Other Firefox privacy options focus on managing data that can be stored on your computer. Do-not-track focuses on data stored on computers you do not have access to. For example, when you visit a web site you have to send an IP address so it can communicate back to you.  IP addresses can give clues to your general geographic location. You cannot visit a web site without sending an IP address, but you can request that web sites not track you over time in their databases.</p>
         </div>
 	   </div>
 	   
 	         <div class="expander expander-odd">
-	    <h4 class="expander-header">What isn't the Do Not Track feature?</h4>
+	    <h4 class="expander-header">What isn't the Do-not-track feature?</h4>
 		<div class="expander-content"> 
-          <p>Do Not Track is not an ad blocker. You will still see as many ads with Do Not Track enabled as without. The difference is the type of ads you see. For example, behavioral ads are targeted to your interests based on the web sites you visit and the search terms you use. If you request that web sites do not track you, you will see more generic ads in place of behavioral ads.</p>
-          <p>Do Not Track does not enforce your privacy preferences. Sites can ignore your request not to be tracked. Do Not Track will not protect you from bad actors or malicious sites. Do Not Track is not a security mechanism. </p>
+          <p>Do-not-track is not an ad blocker. You will still see as many ads with Do-not-track enabled as without. The difference is the type of ads you see. For example, behavioral ads are targeted to your interests based on the web sites you visit and the search terms you use. If you request that web sites do not track you, you will see more generic ads in place of behavioral ads.</p>
+          <p>Do-not-track does not enforce your privacy preferences. Sites can ignore your request not to be tracked. Do-not-track will not protect you from bad actors or malicious sites. Do-not-track is not a security mechanism. </p>
         </div>
 	   </div>
 	   
 	   <div class="expander expander-odd">
-          <h4 class="expander-header">Why Might I Want to Use the Do Not Track 
+          <h4 class="expander-header">Why Might I Want to Use the Do-not-track 
             Preference?</h4>
           
         <div class="expander-content"> 
-          <p>Do Not Track is useful for people who would like more Internet privacy.  Do Not Track was initially envisioned to allow people to choose not to have their data collected and used for behavioral advertising, but it can apply to many situations. Different web sites could handle requests not to track you differently. Sites may interact with you first and get your permission to use or collect data, which gives sites an opportunity to explain their data practices. Do Not Track does not block access to sites, and does not block content from loading.  Consequently, asking sites not to track you should not break the web sites you visit. </p>
+          <p>Do-not-track is useful for people who would like more Internet privacy.  Do-not-track was initially envisioned to allow people to choose not to have their data collected and used for behavioral advertising, but it can apply to many situations. Different web sites could handle requests not to track you differently. Sites may interact with you first and get your permission to use or collect data, which gives sites an opportunity to explain their data practices. Do-not-track does not block access to sites, and does not block content from loading.  Consequently, asking sites not to track you should not break the web sites you visit. </p>
             
-          <p>Do Not Track does not depend on any specific type of technology used in tracking. Requesting companies not track you means you shouldn't have to know how to manage cookies, Flash cookies (LSOs), Javascript, beacons, Silverlight, cache cookies, or innovative technologies yet to be invented. You can just indicate you would prefer not to be tracked and let the web sites figure out how to stop collecting or using data.</p>
+          <p>Do-not-track does not depend on any specific type of technology used in tracking. Requesting companies not track you means you shouldn't have to know how to manage cookies, Flash cookies (LSOs), Javascript, beacons, Silverlight, cache cookies, or innovative technologies yet to be invented. You can just indicate you would prefer not to be tracked and let the web sites figure out how to stop collecting or using data.</p>
             
-          <p>Privacy advocates see privacy as a human right. If that is your view, you may want to enable Do Not Track. As more people enable Do Not Track, people with serious privacy concerns will stand out less for asking not to be tracked.</p>
+          <p>Privacy advocates see privacy as a human right. If that is your view, you may want to enable Do-not-track. As more people enable Do-not-track, people with serious privacy concerns will stand out less for asking not to be tracked.</p>
           </div>
           </div>
 	   
 	  <div class="expander expander-odd"> 
-        <h4 class="expander-header">Why Might I Not Want to Use the Do Not Track 
+        <h4 class="expander-header">Why Might I Not Want to Use the Do-not-track 
           Preference?</h4>
         <div class="expander-content"> 
-          <p>If you prefer ads tailored to your interests, and do not want to see ads that are irrelevant to you, then enabling Do Not Track might not be the right choice for you. You might prefer to leave Do Not Track off if you would like a profile of your Internet use to show you more interesting ads.</p>
-          <p>Do Not Track may block personalized services you enjoy. For example, a Do Not Track request might mean you would have to type in your zip code each time you want to view a weather report, rather than seeing the weather automatically displayed. Personalization can save you time and repetitive typing, but it requires data.</p>
-          <p>Advertisers are concerned that too many people requesting no tracking would reduce profits in behavioral ads, which could limit free content or development of new features. Just as some advertisers think it is wrong to let viewers skip ads on TV, advertisers are concerned about a &quot;free rider&quot; problem online threatening web sites' ability to make money. If that is your view, you may want to keep Do Not Track disabled.</p>
+          <p>If you prefer ads tailored to your interests, and do not want to see ads that are irrelevant to you, then enabling Do-not-track might not be the right choice for you. You might prefer to leave Do-not-track off if you would like a profile of your Internet use to show you more interesting ads.</p>
+          <p>Do-not-track may block personalized services you enjoy. For example, a Do-not-track request might mean you would have to type in your zip code each time you want to view a weather report, rather than seeing the weather automatically displayed. Personalization can save you time and repetitive typing, but it requires data.</p>
+          <p>Advertisers are concerned that too many people requesting no tracking would reduce profits in behavioral ads, which could limit free content or development of new features. Just as some advertisers think it is wrong to let viewers skip ads on TV, advertisers are concerned about a &quot;free rider&quot; problem online threatening web sites' ability to make money. If that is your view, you may want to keep Do-not-track disabled.</p>
         </div>
 		</div>
 		
@@ -137,18 +152,40 @@ $dntval = $_SERVER['HTTP_DNT'];
 		</div>
 		
 		  <div class="expander expander-odd"> 
-	<h4 class="expander-header">How Do I Enable the Do Not Track feature?</h4>
+	<h4 class="expander-header">How Do I Enable the Do-not-track feature?</h4>
 	<div class="expander-content">
-		  <p>This feature is turned off by default . You can find the Do Not Track request on the Advanced pane. <span id="platform-note">On Windows, go to Tools &gt; Options… &gt; Advanced.</span></p>
+		  <p>This feature is turned off by default. You can find the Do-not-track 
+            request on the Advanced pane. <span id="platform-note">On Windows, 
+            go to Tools &gt; Options… &gt; Advanced.</span></p>
 		<noscript>
           <p>On Mac OS X, go to Firefox &gt; Preferences… &gt; Advanced. On Linux, go to Tools &gt; Options &gt; Advanced.</p>
           </noscript>
           Click to check the box next to &quot;Tell web sites I do not want to 
-          be tracked&quot;</p> 
+          be tracked&quot;. For more information, see the help file on 
+		  <a href="https://support.mozilla.com/en-US/kb/how-do-i-stop-websites-tracking-me">how to stop web sites from tracking you</a>.</p>  
 		  </div>
 	</div>
 
-
+        <div class="expander expander-odd"> 
+		  <h4 class="expander-header">Where Can I Learn More?</h4>
+          
+        <div class="expander-content"> If you are interested in the Do-not-track preference, you might also be interested in... 
+          <ul>
+            <li><a href="http://support.mozilla.com/en-US/kb/Private%20Browsing">Private 
+              browsing</a> in Firefox</li>
+            <li><a href="http://support.mozilla.com/en-US/kb/Enabling%20and%20disabling%20cookies">Managing 
+              cookies</a> in Firefox</li>
+            <li>Stanford's <a href="http://donottrack.us/">Do Not Track</a> project</li>
+            <li>Mozilla and Stanford's Do Not Track <a href="http://datatracker.ietf.org/doc/draft-mayer-do-not-track/">submission 
+              to the IETF</a> standards body</li>
+            <li>Learn which sites are tracking you with <a href="file:///aleecia/Library/Mail%20Downloads/www.ghostery.com">Ghostery</a></li>
+            <li>See the Future of Privacy Forum's graphical depiction of <a href="http://www.futureofprivacy.org/wp-content/uploads/2009/11/data.gif">where 
+              your data goes</a> before you click</li>
+          </ul>
+		
+		  </div>
+	    </div>
+		
 </div><!-- end main-content -->
 
 </div><!-- end doc -->
