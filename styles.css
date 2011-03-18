@@ -12,6 +12,8 @@
   width: 255px;
   padding-left: 10px;
   margin-top: 20px;
+  position:relative;
+  z-index:100;
 }
 
 #sidebar h3 {
