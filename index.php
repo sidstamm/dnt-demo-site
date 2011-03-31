@@ -1,4 +1,4 @@
-<?php
+web <?php
 require_once('./config/config.php');
 
 // do-not-track PoC.
@@ -44,7 +44,7 @@ $dntval = $_SERVER['HTTP_DNT'];
   </div>
 <!-- start breadcrumbs #breadcrumbs -->
 <p id="breadcrumbs"><a href="http://www.mozilla.com/" class="home">Home</a> <b>&#187;</b>
-<span>DNT FAQ</span>
+<span>Do Not Track FAQ</span>
 
 </p>
 <!-- end breadcrumbs #breadcrumbs -->
@@ -59,7 +59,7 @@ $dntval = $_SERVER['HTTP_DNT'];
 </div>
 
 <div class='sidebar-box' style="margin-bottom:50px;">
-<h3>Enable Do Not Track in<span/>Firefox 4</span></h3>
+<h3>Enable Do Not Track in<span style="text-transform: capitalize">Firefox 4</span></h3>
 <p style="text-align:center;">
 <a href="https://support.mozilla.com/en-US/kb/how-do-i-stop-websites-tracking-me">
 <img alt="Options window - Advanced panel - Do Not Track" 
@@ -75,7 +75,7 @@ Click for Instructions
 <? if (strchr($_SERVER['HTTP_USER_AGENT'], "MSIE 9.0")) { ?>
 
 <div class="sidebar-box">
-<h3>Do Not Track in Your<span>browser</span></h3>
+<h3>Do Not Track in your<span style="text-transform: capitalize">browser</span></h3>
   <? if ($dnt && $dntval == "1") { ?>
   <p>You're using Internet Explorer 9 (IE 9), and your browser is sending the DNT header because you've enabled Tracking Protection!  This means you're using one or more <a href="http://ie.microsoft.com/testdrive/Browser/TrackingProtectionLists/faq.html">Tracking Protection Lists</a>, and as a result, Internet Explorer is asking all sites to stop tracking you.</p>
   <? } else { ?>
@@ -84,7 +84,7 @@ Click for Instructions
 </div>
 <? } else { ?>
 <div class="sidebar-box">
-<h3>Enable Do Not Track in <span>Internet Explorer 9</span></h3>
+<h3>Enable Do Not Track in <span style="text-transform: capitalize">Internet Explorer 9</span></h3>
   <p>To enable Do Not Track in IE 9, you need to enable IE 9's <a href="http://ie.microsoft.com/testdrive/Browser/TrackingProtectionLists/faq.html">Tracking Protection</a> feature. The easiest way to do that is to install <a href="./dnt-enabler.tpl">Mozilla's Simple Tracking Protection List</a>. If you view this page in IE 9, there will be instructions right here.</p>
 </div>
 <? } ?>
@@ -93,20 +93,15 @@ Click for Instructions
 
 <div id="main-feature" style="z-index:1">
 <h2><span style="text-transform: capitalize">Do Not Track</span></h2>
-<p>As a nonprofit organization, Mozilla's mission is to make the Web more open and 
-participatory. We believe it is crucial to put you in control of your online experience. 
-We are seeking ways to give you better insight and control into the ways your personal 
-information is collected, used, stored and shared online.
+<p>Mozilla is a global, nonprofit organization dedicated to making the Web better. We emphasize principle over profit, and believe that the Web is a shared public resource to be cared for, not a commodity to be sold. We answer to no one but you and believe it is crucial to put you in control of your online experience. We are aiming to give you better insight and control into the ways your personal information is collected, used, stored and shared online. </p>
 
-<p>Firefox 4 offers a Do Not Track (DNT) feature that lets you express a preference not to be tracked by web sites. When the feature is enabled, Firefox will tell advertising networks and other web sites and applications that you want to opt-out
+<p>Mozilla Firefox 4 offers a Do Not Track feature that lets you express a preference not to be tracked by websites. When the feature is enabled, Firefox will tell advertising networks and other websites and applications that you want to opt-out
 of tracking for purposes like behavioral advertising.</p>
 </div>
 
 <div id="main-content">
 
       <h3>Frequently Asked <span>Questions</span></h3>
-          <p>Different people have different privacy preferences. The Do Not Track feature helps you express yourself to web sites.</p>
-
 <div>
       <div class="expander expander-odd expander-first">
 	    <h4 class="expander-header">What is Do Not Track?</h4>
@@ -124,8 +119,8 @@ HTTP header every time your data is requested from the Web.</p>
 		<div class="expander-content"> 
           <p>No, you will still see ads with Do Not Track enabled. However, Do Not Track 
 may change the type of ads you see. For example, behavioral ads are targeted to your 
-interests based on the web sites you visit and the search terms you use. If you request
-that web sites Do Not Track you, and the sites respect your privacy preferences, you 
+interests based on the websites you visit and the search terms you use. If you request
+that websites Do Not Track you, and the sites respect your privacy preferences, you 
 will see more generic ads in place of behavioral ads.</p>
         </div>
 	   </div>
@@ -133,7 +128,7 @@ will see more generic ads in place of behavioral ads.</p>
 	         <div class="expander expander-odd">
 	    <h4 class="expander-header">How does Do Not Track work with other privacy tools?</h4>
 		<div class="expander-content"> 
-	   <p>Do Not Track is one of many privacy solutions. DNT does not replace your 
+	   <p>Do Not Track is one of many privacy solutions. Do Not Track does not replace your 
 anti-virus software, will not encrypt data, and is not a security mechanism. There are
 several other <a href="http://www.mozilla.com/firefox/security">privacy and 
 security</a> features within Firefox.
@@ -143,7 +138,7 @@ security</a> features within Firefox.
 	  <div class="expander expander-even"> 
         <h4 class="expander-header">Will Do Not Track affect the rest of my Web experience?</h4>
         <div class="expander-content"> 
-          <p>Do Not Track may interfere with some personalized services you enjoy. For example, a Do Not Track request might mean you would have to type in your zip code each time you want to view a weather report, rather than seeing the weather automatically displayed. Personalization on web sites can save you time and repetitive typing, but it requires data.</p>
+          <p>Do Not Track may interfere with some personalized services you enjoy. For example, a Do Not Track request might mean you would have to type in your zip code each time you want to view a weather report, rather than seeing the weather automatically displayed. Personalization on websites can save you time and repetitive typing, but it requires data.</p>
         </div>
 		</div>
 		
@@ -156,16 +151,16 @@ security</a> features within Firefox.
 		<noscript>
           <p>On Mac OS X, go to Firefox &gt; Preferences… &gt; Advanced. On Linux, go to Tools &gt; Options &gt; Advanced.</p>
           </noscript>
-          Click to check the box next to &quot;Tell web sites I do not want to 
+          Click to check the box next to &quot;Tell websites I do not want to 
           be tracked&quot;. For more information, see the help file on 
-		  <a href="https://support.mozilla.com/en-US/kb/how-do-i-stop-websites-tracking-me">how to stop web sites from tracking you</a>.</p>  
+		  <a href="https://support.mozilla.com/en-US/kb/how-do-i-stop-websites-tracking-me">how to stop websites from tracking you</a>.</p>  
 		  </div>
 	</div>
 
 		  <div class="expander expander-even"> 
 	<h4 class="expander-header">Will companies honor my Do Not Track preference?</h4>
 	<div class="expander-content">
-          <p>Companies are starting to support DNT, but you may not notice any changes initially. We are actively working with companies that have started to implement DNT, with others who have committed to doing so soon.</p>
+          <p>Companies are starting to support Do Not Track, but you may not notice any changes initially. We are actively working with companies that have started to implement Do Not Track, with others who have committed to doing so soon.</p>
 		</div>
 	</div>
 
@@ -178,6 +173,7 @@ security</a> features within Firefox.
               browsing</a> in Firefox &#8212; limits saving data about which sites and pages you have visited online</li>
             <li><a href="http://support.mozilla.com/en-US/kb/Enabling%20and%20disabling%20cookies">Managing 
               cookies</a> in Firefox &#8212; lets you control how <a href="http://support.mozilla.com/kb/Cookies">cookies</a> are saved on your computer</li>
+	    <li><a href="http://blog.mozilla.com/blog/author/afowlermozilla-com/">Alex Fowler's Mozilla Blog</a> &#8212; latest news from Mozilla's Technology and Privacy Officer</li>
             <li><a href="http://donottrack.us/">donotrack.us</a> project &#8212; Stanford researchers working on the ideas behind Do Not Track</li>
             <li>Mozilla and Stanford's Do Not Track <a href="http://datatracker.ietf.org/doc/draft-mayer-do-not-track/">submission 
               to the IETF</a> &#8212; IETF is a standards body that helps define how the Web works, regardless of which Internet browser you use</li>
