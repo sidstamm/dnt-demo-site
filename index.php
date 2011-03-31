@@ -130,12 +130,12 @@ will see more generic ads in place of behavioral ads.</p>
         </div>
 	   </div>
 
-	         <div class="expander expander-even">
+	         <div class="expander expander-odd">
 	    <h4 class="expander-header">How does Do Not Track work with other privacy tools?</h4>
 		<div class="expander-content"> 
 	   <p>Do Not Track is one of many privacy solutions. DNT does not replace your 
 anti-virus software, will not encrypt data, and is not a security mechanism. There are
-several other <a href="http://www.mozilla.com/firefox/security>privacy and 
+several other <a href="http://www.mozilla.com/firefox/security">privacy and 
 security</a> features within Firefox.
         </div>
 	   </div>
@@ -147,7 +147,7 @@ security</a> features within Firefox.
         </div>
 		</div>
 		
-		  <div class="expander expander-even"> 
+		  <div class="expander expander-odd"> 
 	<h4 class="expander-header">How do I enable Do Not Track in Firefox 4?</h4>
 	<div class="expander-content">
 		  <p>This feature is not enabled by default. You can find the Do Not Track 
@@ -162,14 +162,14 @@ security</a> features within Firefox.
 		  </div>
 	</div>
 
-		  <div class="expander expander-odd"> 
+		  <div class="expander expander-even"> 
 	<h4 class="expander-header">Will companies honor my Do Not Track preference?</h4>
 	<div class="expander-content">
           <p>Companies are starting to support DNT, but you may not notice any changes initially. We are actively working with companies that have started to implement DNT, with others who have committed to doing so soon.</p>
 		</div>
 	</div>
 
-        <div class="expander expander-even"> 
+        <div class="expander expander-odd"> 
 		  <h4 class="expander-header">Where can I learn more?</h4>
           
         <div class="expander-content"> Other interesting work about Do Not Track and online privacy:
