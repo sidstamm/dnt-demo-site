@@ -1,4 +1,4 @@
-web <?php
+<?php
 require_once('./config/config.php');
 
 // do-not-track PoC.
