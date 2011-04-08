@@ -1,7 +1,4 @@
 <?php
-require_once('./config/config.php');
-
-// do-not-track PoC.
 
 $dnt = isset($_SERVER['HTTP_DNT']);
 $dntval = $_SERVER['HTTP_DNT'];
@@ -11,7 +8,7 @@ $dntval = $_SERVER['HTTP_DNT'];
 <html>
 <head>
 <title>Mozilla: Do Not Track</title>
- 	<meta name="og:image" content="http://www-fx4-cdn.stage.mozilla.com/img/firefox-100.jpg">
+ 	<meta name="og:image" content="http://mozcom-cdn.mozilla.net/img/firefox-100.jpg">
 
 <style>
     /* MetaWebPro font family licensed from fontshop.com. WOFF-FTW! */
@@ -22,13 +19,13 @@ $dntval = $_SERVER['HTTP_DNT'];
         font-weight: bold;
     }
 </style>
-	<link href="http://www-fx4-cdn.stage.mozilla.com/includes/min/min.css?g=css" rel="stylesheet">
-    <script src="http://www-fx4-cdn.stage.mozilla.com/includes/min/min.js?g=js"></script>
+	<link href="http://mozcom-cdn.mozilla.net/includes/min/min.css?g=css" rel="stylesheet">
+    <script src="http://mozcom-cdn.mozilla.net/includes/min/min.js?g=js"></script>
     <meta name="WT.ad" content="Do Not Track;Do-not-track;DNT;Privacy;Advertising;Tracking" />
-    <link rel="stylesheet" href="http://www-fx4-cdn.stage.mozilla.com/style/covehead/home-fx.css" media="screen" />
+    <link rel="stylesheet" href="http://mozcom-cdn.mozilla.net/style/covehead/home-fx.css" media="screen" />
     <link rel="stylesheet" href="styles.css" media="screen" />
-    <link rel="stylesheet" href="http://www-fx4-cdn.stage.mozilla.com/style/covehead/mozilla-expanders.css" media="screen" />
-    <script src="http://www-fx4-cdn.stage.mozilla.com/js/mozilla-expanders.js"></script>
+    <link rel="stylesheet" href="http://mozcom-cdn.mozilla.net/style/covehead/mozilla-expanders.css" media="screen" />
+    <script src="http://mozcom-cdn.mozilla.net/js/mozilla-expanders.js"></script>
 
 </head>
 <body class="">

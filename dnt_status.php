@@ -1,7 +1,5 @@
 <?php
 
-require_once('./config/config.php');
-
 // dnt detection script
 // Grabs the HTTP request (i.e., cookies and DNT header and referrer) then 
 // serves an appropriate image back.
