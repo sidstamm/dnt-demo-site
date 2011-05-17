@@ -55,6 +55,23 @@ $dntval = $_SERVER['HTTP_DNT'];
      title="Mozilla's Do Not Track Indicator."/>
 </div>
 
+<? if (strchr($_SERVER['HTTP_USER_AGENT'], "Fennec")) { ?>
+
+<div class='sidebar-box' style="margin-bottom:50px;">
+<h3>Enable Do Not Track in<span style="text-transform: capitalize">Firefox 4 Mobile</span></h3>
+<p style="text-align:center;">
+<a href="images/dnt-mobile-config-screenshot.png">
+<img alt="Settings panel - Do Not Track" 
+	 class="frameless" 
+	 src="images/dnt-mobile-config-screenshot-thumb.png" 
+	 title="Enabling Do Not Track"></a>
+<br/>
+Open the settings window, then set "Tell sites not to track me" to Yes.
+</a>
+</p>
+</div>
+
+<? } else { ?>
 <div class='sidebar-box' style="margin-bottom:50px;">
 <h3>Enable Do Not Track in<span style="text-transform: capitalize">Firefox 4</span></h3>
 <p style="text-align:center;">
@@ -68,6 +85,7 @@ Click for Instructions
 </a>
 </p>
 </div>
+<? } ?>
 
 <? if (strchr($_SERVER['HTTP_USER_AGENT'], "MSIE 9.0")) { ?>
 
@@ -100,7 +118,7 @@ of tracking for purposes like behavioral advertising.</p>
 
       <h3>Frequently Asked <span>Questions</span></h3>
 <div>
-      <div class="expander expander-odd expander-first">
+      <div class="expander expander-even expander-first">
 	    <h4 class="expander-header">What is Do Not Track?</h4>
 		<div class="expander-content"> 
           <p>Do Not Track is a step toward putting you in control of the way your 
@@ -109,9 +127,19 @@ allows you to let a website know you would like to opt-out of third-party tracki
 purposes including behavioral advertising. It does this by transmitting a Do Not Track 
 HTTP header every time your data is requested from the Web.</p>
         </div>
-	   </div>
-	   
-	         <div class="expander expander-even">
+
+      </div>
+      <div class="expander expander-odd">
+	    <h4 class="expander-header">Is Do Not Track available on Firefox for Android?</h4>
+		<div class="expander-content"> 
+          <p>Yes. Firefox for Android is the first mobile Web browser to offer 
+the Do Not Track privacy feature, and behaves the same way it does on the 
+desktop. To turn Do Not Track on in Firefox for Android, simply swipe left and 
+tap on Browser Tools. From the Preferences pane, tap on the box next to “Tell 
+sites not to track me" to turn this option on or off.  </p>
+        </div>
+        </div>
+        <div class="expander expander-even">
 	    <h4 class="expander-header">Does Do Not Track block ads?</h4>
 		<div class="expander-content"> 
           <p>No, you will still see ads with Do Not Track enabled. However, Do Not Track 
