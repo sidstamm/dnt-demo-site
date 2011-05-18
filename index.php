@@ -66,7 +66,7 @@ $dntval = $_SERVER['HTTP_DNT'];
 	 src="images/dnt-mobile-config-screenshot-thumb.png" 
 	 title="Enabling Do Not Track"></a>
 <br/>
-Open the settings window, then set "Tell sites not to track me" to Yes.
+Open the settings window, then set &quot;Tell sites not to track me&quot; to Yes.
 </a>
 </p>
 </div>
@@ -135,8 +135,8 @@ HTTP header every time your data is requested from the Web.</p>
           <p>Yes. Firefox for Android is the first mobile Web browser to offer 
 the Do Not Track privacy feature, and behaves the same way it does on the 
 desktop. To turn Do Not Track on in Firefox for Android, simply swipe left and 
-tap on Browser Tools. From the Preferences pane, tap on the box next to “Tell 
-sites not to track me" to turn this option on or off.  </p>
+tap on Browser Tools. From the Preferences pane, tap on the box next to &quot;Tell 
+sites not to track me&quot; to turn this option on or off.  </p>
         </div>
         </div>
         <div class="expander expander-even">
