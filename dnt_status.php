@@ -1,10 +1,10 @@
 <?php
 
 // dnt detection script
-// Grabs the HTTP request (i.e., cookies and DNT header and referrer) then 
+// Grabs the HTTP request (i.e., cookies and DNT header and referrer) then
 // serves an appropriate image back.
 
-$dnt = isset($_SERVER['HTTP_DNT']) and $_SERVER['HTTP_DNT'] == 1;
+$dnt = $_SERVER['HTTP_DNT'] == 1;
 
 // Force no-caching
 header("Expires: Thu, 19 Nov 1981 08:52:00 GMT");
@@ -18,4 +18,3 @@ if($dnt) {
 } else {
   readfile("images/DNT-indicator-off.png");
 }
-?>
