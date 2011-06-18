@@ -1,0 +1,41 @@
+body {
+    min-width: 0;
+}
+
+#header a.mozilla {
+    text-indent: -300px;
+}
+
+#wrapper {
+    min-width: 0;
+    padding: 0px 4px;
+}
+
+#doc {
+    font-size: 20px;
+    width: auto;
+}
+
+h2,
+h3 {
+    border-bottom: 2px dotted #ddd;
+}
+
+#footer-contents {
+    margin: 0 4px;
+    width: auto;
+}
+
+div#footer a.desktop-link {
+    background: none repeat scroll 0 0 #5F92CE;
+    border-radius: 6px 6px 6px 6px;
+    color: #FFFFFF;
+    display: block;
+    font-family: "Trebuchet MS","Droid Sans",sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 200%;
+    margin: 1em 0;
+    text-align: center;
+    text-transform: uppercase;
+}
