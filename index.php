@@ -61,9 +61,9 @@ $ie9 = (bool)preg_match($ier, $ua);
 
 <?php
 if ($mobile) {
-    include 'mobile.php';
+    include 'includes/mobile.php';
 } else {
-    include 'desktop.php';
+    include 'includes/desktop.php';
 }
 ?>
 
