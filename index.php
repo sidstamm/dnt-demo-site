@@ -20,6 +20,8 @@ $mobile = (($_COOKIE[$mc] != 'off' && preg_match($mr, $ua))
            || $_COOKIE[$mc] == 'on');
 $ie9 = (bool)preg_match($ier, $ua);
 
+header('Vary: Cookie, User-Agent');
+
 ?>
 <!DOCTYPE html>
 <html>
