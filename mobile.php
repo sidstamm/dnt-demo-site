@@ -1,33 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Mozilla: Do Not Track</title>
-<meta name="og:image" content="http://mozcom-cdn.mozilla.net/img/firefox-100.jpg">
-<meta content="width=device-width, initial-scale=1" name="viewport">
-<style>
-    /* MetaWebPro font family licensed from fontshop.com. WOFF-FTW! */
-    @font-face {
-        font-family: 'MetaBlack';
-        src: url('http://mozcom-cdn.mozilla.net/img/fonts/MetaWebPro-Black.eot');
-        src: local('☺'), url('http://mozcom-cdn.mozilla.net/img/fonts/MetaWebPro-Black.woff') format('woff');
-        font-weight: bold;
-    }
-</style>
-<link href="http://mozcom-cdn.mozilla.net/includes/min/min.css?g=css" rel="stylesheet">
-<script src="http://mozcom-cdn.mozilla.net/includes/min/min.js?g=js"></script>
-<meta name="WT.ad" content="Do Not Track;Do-not-track;DNT;Privacy;Advertising;Tracking" />
-<link rel="stylesheet" href="http://mozcom-cdn.mozilla.net/style/covehead/home-fx.css" media="screen" />
-<link rel="stylesheet" href="mobile.css" media="screen" />
-<link rel="stylesheet" href="http://mozcom-cdn.mozilla.net/style/covehead/mozilla-expanders.css" media="screen" />
-<script src="http://mozcom-cdn.mozilla.net/js/mozilla-expanders.js"></script>
-</head>
-<body>
-
-<div id="wrapper">
-<div id="doc">
-
-<?php include 'includes/header.php'; ?>
-
 <?php include 'includes/description.php'; ?>
 
 <p style="text-align: center;">
@@ -73,17 +43,3 @@
 
 <h3>Frequently Asked Questions</h3>
 <?php include 'includes/faq.php'; ?>
-</div><?php # end #doc ?>
-</div><?php # end #wrapper ?>
-
-<div id="footer">
-  <div id="footer-contents" role="contentinfo">
-    <a class="desktop-link" href="/?v=desktop">View Full Site</a>
-    <div id="copyright">
-      <p>Except where otherwise <a href="http://www.mozilla.com/en-US/about/legal.html#site">noted</a>, content on this site is licensed under the <br /><a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.</p>
-    </div>
-  </div>
-</div>
-
-</body>
-</html>
