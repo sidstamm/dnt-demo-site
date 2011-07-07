@@ -3,7 +3,7 @@
     <h4 class="expander-header">What is Do Not Track?</h4>
     <div class="expander-content">
       <p>Do Not Track is a step toward putting you in control of the way your
-        information is collected and used online. Do Not Track is a feature in Firefox 4 that
+        information is collected and used online. Do Not Track is a feature in Firefox that
         allows you to let a website know you would like to opt-out of third-party tracking for
         purposes including behavioral advertising. It does this by transmitting a Do Not Track
         HTTP header every time your data is requested from the Web.</p>
@@ -50,7 +50,7 @@
   </div>
 
   <div class="expander expander-odd">
-    <h4 class="expander-header">How do I enable Do Not Track in Firefox 4?</h4>
+    <h4 class="expander-header">How do I enable Do Not Track in Firefox?</h4>
     <div class="expander-content">
       <p>This feature is not enabled by default. You can find the Do Not Track
         request on the Advanced pane. <span id="platform-note">On Windows,

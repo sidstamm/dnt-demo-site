@@ -11,7 +11,7 @@
 
 <ul class="listview">
   <li class="expander">
-    <h4 class="expander-header">In Firefox 4</h4>
+    <h4 class="expander-header">In Firefox</h4>
     <div class="expander-content">
       <p style="text-align:center;">
         <a href="images/dnt-mobile-config-screenshot.png">

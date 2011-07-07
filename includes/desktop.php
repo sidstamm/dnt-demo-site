@@ -16,7 +16,7 @@
 
 <div class='sidebar-box' style="margin-bottom:50px;">
   <?php if ($mobile): ?>
-    <h3>Enable Do Not Track in <span style="text-transform: capitalize">Firefox 4 Mobile</span></h3>
+    <h3>Enable Do Not Track in <span style="text-transform: capitalize">Firefox Mobile</span></h3>
     <p style="text-align:center;">
       <a href="images/dnt-mobile-config-screenshot.png">
         <img alt="Settings panel - Do Not Track"
@@ -28,12 +28,12 @@
       Open the settings window, then set &quot;Tell sites not to track me&quot; to Yes.
     </p>
   <?php else: ?>
-    <h3>Enable Do Not Track in <span style="text-transform: capitalize">Firefox 4</span></h3>
+    <h3>Enable Do Not Track in <span style="text-transform: capitalize">Firefox</span></h3>
     <p style="text-align:center;">
       <a href="https://support.mozilla.com/en-US/kb/how-do-i-stop-websites-tracking-me">
         <img alt="Options window - Advanced panel - Do Not Track"
            class="frameless"
-           src="images/dnt-config-screenshot-thumb.jpg"
+           src="images/fx5-dnt.png"
            title="Enabling Do Not Track">
         <br/>
         Click for Instructions
