@@ -53,10 +53,10 @@
     <h4 class="expander-header">How do I enable Do Not Track in Firefox?</h4>
     <div class="expander-content">
       <p>This feature is not enabled by default. You can find the Do Not Track
-        request on the Advanced pane. <span id="platform-note">On Windows,
-        go to Tools &gt; Options... &gt; Advanced.</span></p>
+        request on the Privacy pane. <span id="platform-note">On Windows,
+        go to Tools &gt; Options... &gt; Privacy.</span></p>
         <noscript>
-        <p>On Mac OS X, go to Firefox &gt; Preferences… &gt; Advanced. On Linux, go to Tools &gt; Options &gt; Advanced.</p>
+        <p>On Mac OS X, go to Firefox &gt; Preferences… &gt; Privacy. On Linux, go to Tools &gt; Options &gt; Privacy.</p>
         </noscript>
         Click to check the box next to &quot;Tell websites I do not want to
         be tracked&quot;. For more information, see the help file on
