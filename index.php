@@ -83,5 +83,21 @@ if ($mobile) {
   </div>
 </div>
 
+<?php if (!$dnt): ?>
+<!-- this metrics code is not included if DNT is enabled and DNT:1 is sent by the browser. -->
+<script type="text/javascript" src="http://mozcom-cdn.mozilla.net/includes/min/min.js?g=js_stats"></script>
+<script type="text/javascript">
+  //<![CDATA[
+  var _tag = new WebTrends({"dcsid":"dcsf9nqmj10000clgc14f05rf_2u7t","rate":50,"fpcdom":"mozilla.org"});
+  _tag.dcsGetId();
+  //]]>
+</script>
+<script>
+  //<![CDATA[
+  _tag.dcsCollect();
+  //]]>
+</script>
+<?php endif;?>
+
 </body>
 </html>
